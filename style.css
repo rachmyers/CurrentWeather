@@ -1,0 +1,18 @@
+/* Name: Rachel Myers
+* Class: CIS 131
+* Section: W01
+* Date: 12/11/2020
+*/
+
+/* Formatting for the zip code text box */
+.form-control-lg {
+    width: 200px;
+    margin-right: 20px;
+    height: 40px;
+}
+
+/* Formatting for the Get Weather button */
+.btn {
+    height: 40px;
+}
+

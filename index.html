@@ -1,0 +1,63 @@
+<!--
+    Name: Rachel Myers
+    Class: CIS 131
+    Section: W01
+    Date: 12/11/2020
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Current Weather</title>
+</head>
+<body>
+
+    <div class="card">
+        <h5 class="card-header">Get Current Weather</h5>
+        <div class="card-body">
+          <h5 class="card-title">Enter your zip code</h5>
+
+          <div class="form-row">
+
+          <input class="form-control form-control-lg" id="zip" type="text" placeholder="12345">
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="c" name="rbUnit" class="custom-control-input">
+            <label class="custom-control-label" for="c">Celsius</label>
+          </div>
+
+          <div class="custom-control custom-radio custom-control-inline">
+            <input type="radio" id="f" name="rbUnit" class="custom-control-input">
+            <label class="custom-control-label" for="f">Fahrenheit</label>
+          </div>
+
+          <a href="#" class="btn btn-primary" id="btGetWeather">Get Weather</a>
+
+        </div>
+
+     </div>
+    </div>
+
+    <div class="card" id="currentWeather" style="width: 100%; display: none">
+        <div class="card-header">
+          Current Weather for <b><span id="city"></span></b>
+        </div>
+
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item" id="temperature"></li>
+        </ul>
+
+        <div class="card-header">Current Conditions:</div>
+        
+        <ul class="list-group list-group-flush">
+             <li class="list-group-item"><img id="icon"><span id="currentConditions"></span></li>
+        </ul>
+      </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
