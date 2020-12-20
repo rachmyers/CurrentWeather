@@ -41,7 +41,7 @@ function getWeather()
         var unit = getUnits();
         
         //Send a get request to get current weather for the specified zip code and unit
-        httpRequest.open("get", "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",US&units=" + unit + "&appid=3ef04fb16dcbd2e3aa37de5025113b85");
+        httpRequest.open("get", "https://api.openweathermap.org/data/2.5/weather?zip=" + zip + ",US&units=" + unit + [your API key goes here]);
 
         //Send the request
         httpRequest.send();
